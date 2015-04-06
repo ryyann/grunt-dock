@@ -16,6 +16,7 @@ var server = http.createServer(function (req, res) {
 
   res.write('<p>Behind NGINX? ==> ' + (req.headers['x-forwarded-host'] === 'nginx') +  '</p>');
 
+  res.write('<div><h1>test</h1></div>');
   res.write('</body></html>');
   res.end();
 });
