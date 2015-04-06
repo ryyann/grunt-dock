@@ -57,7 +57,7 @@ module.exports = function(grunt) {
                 // Bind the directory 'bundle/node' into the directory container '/bundle'
                 start:  { 
                   "PortBindings": { "8080/tcp": [ { "HostPort": "8080" } ] },
-                  "Binds":[__dirname + "/bundle/node:/bundle"]
+                  "Binds":[__dirname + "/bundle/node:/bundle"],
                 },
 
                 // For logs, only stdout
